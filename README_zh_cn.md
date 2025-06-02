@@ -20,6 +20,7 @@ SpawnFixer是一个用于自动修复每个玩家的全局出生点的MCDR插件
 
 ### 依赖
 **需要的PyPI包**:
+> 以下依赖将于后续版本中被需要，目前还暂未用到。
 - `requirements.txt`
 ```txt
 mcdreforged

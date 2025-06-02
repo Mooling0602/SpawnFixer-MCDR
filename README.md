@@ -20,6 +20,7 @@ Or download the `SpawnFixer-v*.mcdr` file from [Releases](https://github.com/MCD
 
 ### Dependency
 **PyPI packages need**:
+> Following plugins are not used at present, will be required in the future versions.
 - `requirements.txt`
 ```txt
 mcdreforged
