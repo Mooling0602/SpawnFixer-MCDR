@@ -1,5 +1,5 @@
 - English
-- [简体中文](README-zh.md)
+- [简体中文](README_zh_cn.md)
 
 # SpawnFixer-MCDR
 SpawnFixer is a plugin working with MCDR that automatically fixes the global spawn point for each of the players.
