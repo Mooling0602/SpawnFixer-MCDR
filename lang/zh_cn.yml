@@ -1,0 +1,8 @@
+spawn_fixer:
+  on_load:
+    finish: "&a插件加载完成！"
+    warn: "你好像还没修改过配置。"
+  on_error: "配置出现错误，请检查配置文件！"
+  on_player_joined: "正在设置{player}的重生点..."
+  on_default_config: "请修改配置中的重生点信息！"
+  on_set_spawnpoint: "已将{player}的重生点设为：{spawnpoint}。"
