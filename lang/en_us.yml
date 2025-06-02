@@ -1,6 +1,6 @@
 spawn_fixer:
   on_load:
-    finish: "&aLoaded plugin."
+    finish: "§aLoaded plugin."
     warn: "Seems config is not edited."
   on_error: "Something in config is wrong, plz check your config file!"
   on_player_joined: "Setting {player}'s spawnpoint..."
