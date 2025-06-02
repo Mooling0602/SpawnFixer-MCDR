@@ -55,6 +55,10 @@ def set_spawnpoint(server: PluginServerInterface, player: str):
         case _:
             raise RuntimeError(tr(server, "on_error"))
     assert None not in (x, y, z)
+    for coord in ('x', 'y', 'z'):
+        value = locals()[coord]
+        if isinstance(value, float) and not value.is_integer():
+            locals()[coord] = int(round(value))
     command = f"spawnpoint {player} {x} {y} {z}"
     if rt.config.force_dimension:
         if rt.config.force_dimension != "minecraft:overworld":

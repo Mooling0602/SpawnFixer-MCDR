@@ -16,9 +16,9 @@ class ConfigServerPath(BaseModel):
 
 
 class ConfigSpawnpoint(BaseModel):
-    x: float = 0
-    y: float = 64
-    z: float = 0
+    x: int = 0
+    y: int = 64
+    z: int = 0
 
 
 class PluginConfig(BaseModel):
