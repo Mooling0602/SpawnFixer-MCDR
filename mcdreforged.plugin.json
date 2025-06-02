@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "name": "SpawnFixer",
     "description": {
-        "en_us": "A plugin working with MCDR that automatically fixes the global spawn point for each of the players.",
+        "en_us": "Automatically fixes the global spawn point for each of the players.",
         "zh_cn": "自动修复每个玩家的全局生成点。"
     },
     "author": "Mooling0602",
