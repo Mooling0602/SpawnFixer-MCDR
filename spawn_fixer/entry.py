@@ -59,12 +59,16 @@ def set_spawnpoint(server: PluginServerInterface, player: str):
         value = locals()[coord]
         if isinstance(value, float) and not value.is_integer():
             locals()[coord] = int(round(value))
-    command = f"spawnpoint {player} {x} {y} {z}"
+    spawn_command = f"spawnpoint {player} {x} {y} {z}"
+    tp_command = f"tp {player} {x} {y} {z}"
     if rt.config.force_dimension:
         if rt.config.force_dimension != "minecraft:overworld":
-            command = f"execute in {rt.config.target_dimension} run {command}"
+            spawn_command = f"execute in {rt.config.target_dimension} run {spawn_command}"
+            tp_command = f"execute in {rt.config.target_dimension} run {tp_command}"
         else:
-            command = f"execute in minecraft:overworld run {command}"
-    server.execute(command)
+            spawn_command = f"execute in minecraft:overworld run {spawn_command}"
+            tp_command = f"execute in minecraft:overworld run {tp_command}"
+    server.execute(spawn_command)
+    server.execute(tp_command)
     server.logger.info(tr(server, "on_set_spawnpoint", player=player, spawnpoint=f"{x}, {y}, {z}"))
         
