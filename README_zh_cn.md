@@ -27,6 +27,7 @@ javaproperties
 ```
 
 **需要的MCDR插件**:
+> 以下依赖将于后续版本中被需要，目前还暂未用到。
 - MoreCommandNodes | [GitHub](https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/src/more_command_nodes) | [PluginCatalogue](https://mcdreforged.com/en/plugin/more_command_nodes)
 > 可选，用于像`<x> <y> <z>`这样的坐标参数检查。
 
@@ -52,6 +53,9 @@ target_dimension: minecraft\:overworld
 ```
 
 修改完配置后，请安装所有必需依赖，并推荐同时安装所有的可选依赖。
+
+### 调试
+> 将于后续版本中实现。
 
 ## 注意
 如果你使用此插件，游戏规则`spawnRadius`将不再可用。

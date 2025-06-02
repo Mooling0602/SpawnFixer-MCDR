@@ -27,6 +27,7 @@ javaproperties
 ```
 
 **MCDR plugins need**:
+> Following plugins are not used at present, will be required in the future versions.
 - MoreCommandNodes | [GitHub](https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/src/more_command_nodes) | [PluginCatalogue](https://mcdreforged.com/en/plugin/more_command_nodes)
 > Optional, for pos arguments check like `<x> <y> <z>`.
 
@@ -51,6 +52,8 @@ force_dimension: false
 target_dimension: minecraft\:overworld
 ```
 
+### Debug
+> Will implemented in later versions.
 After configured, make sure you have installed necessary dependencies, and I recommend you to install other optional dependencies also.
 
 Then, start MCDR server, and after server startup, execute `!!spawn_fixer debug` in MCDR console.
