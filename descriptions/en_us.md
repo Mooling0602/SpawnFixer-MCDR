@@ -1,1 +1,1 @@
-A plugin working with MCDR that automatically fixes the global spawn point for each of the players.
+Automatically fixes the global spawn point for each of the players.
