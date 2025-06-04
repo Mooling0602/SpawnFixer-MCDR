@@ -5,9 +5,18 @@
 SpawnFixer is a plugin working with MCDR that automatically fixes the global spawn point for each of the players.
 
 ## Principle
+### v0.1.0
+
+Plugin will use the `/data` command to get a player's respawn point, and fix pos y to correct value. This works for both new and old players.
+
+Still in developing...
+
+### v0.0.1
+
 The principle of this plugin is to use the `/spawnpoint` command to set the spawn point for each player, when they firstly joined the server.
 
-### Player first join detection
+**Player first join detection**
+
 Plugin will read filenames of files in `</path/to/server>/<world_name>/playerdata`, and get existing players' UUID list from them.
 
 After server startup, if a player is joining, and there is no UUID matched with his/her name before, plugin will execute the `/spawnpoint <UUID> <x> <y> <z>` to set the spawn point for him/her. And plugin will also refresh the UUID list when command execution is finished.
